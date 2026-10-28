@@ -3,7 +3,7 @@
  * Plugin Name:       Advisers Contacts
  * Plugin URI:        https://myadvisers.in/advisers-contacts/
  * Description:       Fully manageable drag-and-drop contact form with a submissions dashboard, referrer tracking, WhatsApp/email quick-links and an auto-generated Contact Us page. Multisite compatible.
- * Version:           1.4.8
+ * Version:           1.4.9
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            My Advisers
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Plugin version. Bump on every functional release. @since 1.0.0 */
-define( 'ADVC_VERSION', '1.4.8' );
+define( 'ADVC_VERSION', '1.4.9' );
 
 /**
  * DB schema version this codebase expects. Bump only when the table

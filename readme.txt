@@ -4,7 +4,7 @@ Tags: contact form, lead generation, form builder, drag and drop, leads
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.4.8
+Stable tag: 1.4.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ Advisers Contacts is a multipurpose contact and lead generation form for any bus
 * Modern card layout, two fields per row on desktop and one on mobile.
 * Four color themes: Ocean Blue, Emerald Green, Royal Violet and Slate Dark.
 * Editable form name, form description and thank-you message.
-* Override the heading, intro and theme per page: `[advisers_contact_form theme="emerald" title="Get a free quote"]`.
+* Override the heading, intro and theme per page with shortcode attributes, for example `[advisers_contact_form theme="emerald" title="Get a free quote"]`
 
 **Form builder**
 
@@ -153,6 +153,9 @@ Yes. Activate it per site or Network Activate it. Network Activation provisions 
 
 == Changelog ==
 
+= 1.4.9 =
+* Readme: fixed a stray character that appeared after the shortcode example on the plugin page.
+
 = 1.4.8 =
 * Fixed the "Mark Referrer Rewarded" and "Unmark Rewarded" bulk actions, which did nothing.
 * A visitor's validation mistakes no longer count towards the hourly submission limit; the limit can be changed with the new `advc_rate_limit` filter.
@@ -232,6 +235,9 @@ Yes. Activate it per site or Network Activate it. Network Activation provisions 
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.4.9 =
+Readme formatting fix only. No code changes.
 
 = 1.4.8 =
 Fixes the rewarded bulk actions and several security and compatibility details.
