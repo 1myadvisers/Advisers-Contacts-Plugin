@@ -1,0 +1,318 @@
+/* Advisers Contacts — front-end form styles (v1.3.0) */
+
+.advc-form-wrap {
+	--advc-accent: #2563eb;
+	--advc-accent-dark: #1d4ed8;
+	--advc-accent-soft: #eff4ff;
+	--advc-bg: #ffffff;
+	--advc-text: #0f172a;
+	--advc-muted: #64748b;
+	--advc-border: #d6dce5;
+	--advc-border-strong: #94a3b8;
+	--advc-field-bg: #ffffff;
+	--advc-radius: 12px;
+	max-width: 760px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	color: var(--advc-text);
+}
+
+.advc-form-wrap *,
+.advc-form-wrap *::before,
+.advc-form-wrap *::after {
+	box-sizing: border-box;
+}
+
+.advc-theme-emerald {
+	--advc-accent: #059669;
+	--advc-accent-dark: #047857;
+	--advc-accent-soft: #ecfdf5;
+}
+
+.advc-theme-violet {
+	--advc-accent: #7c3aed;
+	--advc-accent-dark: #6d28d9;
+	--advc-accent-soft: #f5f3ff;
+}
+
+.advc-theme-slate {
+	--advc-accent: #38bdf8;
+	--advc-accent-dark: #0ea5e9;
+	--advc-accent-soft: #1e293b;
+	--advc-bg: #0f172a;
+	--advc-text: #f1f5f9;
+	--advc-muted: #94a3b8;
+	--advc-border: #334155;
+	--advc-border-strong: #475569;
+	--advc-field-bg: #1e293b;
+}
+
+.advc-card {
+	background: var(--advc-bg);
+	border: 2px solid var(--advc-border-strong);
+	border-top: 5px solid var(--advc-accent);
+	border-radius: var(--advc-radius);
+	padding: 32px;
+	box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.advc-card-head {
+	margin-bottom: 24px;
+}
+
+.advc-form-wrap .advc-title {
+	margin: 0 0 8px;
+	font-size: 1.6em;
+	line-height: 1.25;
+	color: var(--advc-text);
+}
+
+.advc-form-wrap .advc-intro {
+	margin: 0;
+	color: var(--advc-muted);
+	font-size: 1em;
+	line-height: 1.55;
+}
+
+.advc-notice {
+	padding: 14px 16px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	font-size: 0.95em;
+	line-height: 1.5;
+}
+
+.advc-notice-success {
+	background: #ecfdf5;
+	color: #065f46;
+	border: 1px solid #a7f3d0;
+}
+
+.advc-notice-error {
+	background: #fef2f2;
+	color: #991b1b;
+	border: 1px solid #fecaca;
+}
+
+.advc-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px 20px;
+}
+
+.advc-form .advc-field {
+	margin: 0;
+	min-width: 0;
+}
+
+.advc-form .advc-w-full {
+	grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+	.advc-card {
+		padding: 22px 18px;
+	}
+
+	.advc-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.advc-form .advc-w-half {
+		grid-column: 1 / -1;
+	}
+}
+
+.advc-form .advc-label,
+.advc-form label.advc-label {
+	display: block;
+	margin: 0 0 6px;
+	font-size: 0.9em;
+	font-weight: 600;
+	color: var(--advc-text);
+}
+
+.advc-required {
+	color: #dc2626;
+	margin-left: 2px;
+}
+
+.advc-form input[type="text"],
+.advc-form input[type="email"],
+.advc-form input[type="tel"],
+.advc-form input[type="url"],
+.advc-form input[type="date"],
+.advc-form input[type="file"],
+.advc-form select,
+.advc-form textarea {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 11px 14px;
+	border: 1px solid var(--advc-border-strong);
+	border-radius: 8px;
+	background: var(--advc-field-bg);
+	color: var(--advc-text);
+	font-size: 15px;
+	line-height: 1.4;
+	box-shadow: none;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.advc-form textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.advc-form input:focus,
+.advc-form select:focus,
+.advc-form textarea:focus {
+	outline: none;
+	border-color: var(--advc-accent);
+	box-shadow: 0 0 0 3px var(--advc-accent-soft);
+}
+
+.advc-theme-slate .advc-form input:focus,
+.advc-theme-slate .advc-form select:focus,
+.advc-theme-slate .advc-form textarea:focus {
+	box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+}
+
+.advc-form ::placeholder {
+	color: var(--advc-muted);
+	opacity: 0.8;
+}
+
+.advc-choices {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.advc-form .advc-choice,
+.advc-form .advc-check {
+	display: inline-flex;
+	align-items: flex-start;
+	gap: 8px;
+	margin: 0;
+	font-weight: 500;
+	font-size: 0.95em;
+	line-height: 1.45;
+	color: var(--advc-text);
+	cursor: pointer;
+}
+
+.advc-form .advc-choice {
+	align-items: center;
+	padding: 9px 14px;
+	border: 1px solid var(--advc-border);
+	border-radius: 8px;
+	background: var(--advc-field-bg);
+}
+
+.advc-form .advc-choice:hover {
+	border-color: var(--advc-accent);
+}
+
+.advc-form .advc-choice input,
+.advc-form .advc-check input {
+	width: auto;
+	margin: 3px 0 0;
+	accent-color: var(--advc-accent);
+	flex: 0 0 auto;
+}
+
+.advc-form .advc-choice input {
+	margin: 0;
+}
+
+.advc-form .advc-help {
+	display: block;
+	margin-top: 5px;
+	font-size: 0.82em;
+	color: var(--advc-muted);
+}
+
+.advc-form .advc-submit-btn {
+	display: inline-block;
+	width: 100%;
+	padding: 14px 28px;
+	border: 0;
+	border-radius: 8px;
+	background: var(--advc-accent);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.2;
+	cursor: pointer;
+	box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
+	transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.advc-theme-slate .advc-form .advc-submit-btn {
+	color: #0f172a;
+}
+
+.advc-form .advc-submit-btn:hover,
+.advc-form .advc-submit-btn:focus {
+	background: var(--advc-accent-dark);
+}
+
+.advc-form .advc-submit-btn:active {
+	transform: translateY(1px);
+}
+
+.advc-form .advc-submit-btn:disabled {
+	opacity: 0.7;
+	cursor: wait;
+}
+
+.advc-form .advc-note {
+	margin: 16px 0 0;
+	text-align: center;
+	font-size: 0.82em;
+	color: var(--advc-muted);
+}
+
+.advc-hp-field {
+	position: absolute !important;
+	left: -9999px !important;
+	top: -9999px !important;
+}
+
+.advc-share {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 18px;
+}
+
+.advc-share .advc-share-label {
+	font-size: 0.85em;
+	font-weight: 600;
+	color: var(--advc-muted);
+	margin-right: 4px;
+}
+
+.advc-share .advc-share-btn {
+	display: inline-block;
+	padding: 7px 14px;
+	border: 1px solid var(--advc-border-strong);
+	border-radius: 999px;
+	background: var(--advc-bg);
+	color: var(--advc-text);
+	font-size: 0.85em;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+	transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.advc-share .advc-share-btn:hover,
+.advc-share .advc-share-btn:focus {
+	border-color: var(--advc-accent);
+	color: var(--advc-accent);
+}
